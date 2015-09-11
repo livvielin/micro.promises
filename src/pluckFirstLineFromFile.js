@@ -15,7 +15,8 @@ var pluckFirstLineFromFile = function(filePath) {
       return fileBuffer.toString();
     })
     .then(function pluckFirstLine (stringifiedFile) {
-      // YOUR CODE HERE
+      var fileArray = stringifiedFile.split('\n')
+      return fileArray[0]
     });
 };
 

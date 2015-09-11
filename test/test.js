@@ -6,7 +6,7 @@ var delay = require('../lib/asyncLib.js').delay;
 
 describe('Bare Minimum -', function() {
 
-  describe('readfileWithPromisify.js', function () {
+  xdescribe('readfileWithPromisify.js', function () {
     var readFileWithPromisify = require('../src/readFileWithPromisify.js');
    
     it('should return a promise', function () {
@@ -37,7 +37,7 @@ describe('Bare Minimum -', function() {
     });
   });
 
-  describe('getStatusCodeWithPromisify.js', function () {
+  xdescribe('getStatusCodeWithPromisify.js', function () {
     var getStatusCodeWithPromisify = require('../src/getStatusCodeWithPromisify.js');
 
     it('should return a promise', function () {
@@ -68,7 +68,7 @@ describe('Bare Minimum -', function() {
     });
   });
 
-  describe('readfileWithPromise.js', function () {
+  xdescribe('readfileWithPromise.js', function () {
     var readFileWithPromise = require('../src/readFileWithPromise.js');
 
     it('should return a promise', function () {
@@ -100,7 +100,7 @@ describe('Bare Minimum -', function() {
     });
   });
 
-  describe('getStatusCodeWithPromise.js', function () {
+  xdescribe('getStatusCodeWithPromise.js', function () {
     var getStatusCodeWithPromise = require('../src/getStatusCodeWithPromise.js');
 
     it('should return a promise', function () {

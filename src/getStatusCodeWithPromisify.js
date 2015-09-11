@@ -15,7 +15,20 @@ var getStatusCode = function (url, callback) {
 };
 
 // Set `getStatusCodeWithPromisify` to be a promisified version of `getStatusCode`
-var getStatusCodeWithPromisify;
+var getStatusCodeWithPromisify = function (url) {
+  return new Promise(function (resolve, reject) {
+
+    request(url, function (err, response, body) {
+      if (err) { 
+        reject(err); 
+      }
+      else {
+        resolve(response.statusCode);
+      }
+    });
+
+  });
+};
 // NOTE: promisify doesn't care what the underlying asyncronous work is,
 // it can be used for any function that follows the node style pattern above
 

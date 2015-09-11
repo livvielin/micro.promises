@@ -25,6 +25,7 @@ Promise.all([
   asyncLib.getValueC(),
   asyncLib.getValueD()
 ])
+//.then(function(values){console.log("blah", values)})
 .then(asyncLib.logResolvedValues)
 .then(asyncLib.filterValuesFromCollection)
 .then(asyncLib.doMoreAsyncWorkWithFilteredValues)
